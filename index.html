@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt Cheatsheet 2026 — 200+ ChatGPT Prompts with CRAFT Framework | MidasTools</title>
+<meta name="description" content="The ultimate AI prompt cheat sheet for 2026. 200+ ready-to-use prompts for ChatGPT, Claude, Gemini using the CRAFT framework. Business, marketing, coding, image gen &amp; more.">
+<link rel="canonical" href="https://manduks.github.io/ai-prompt-cheatsheet/">
+<meta property="og:title" content="AI Prompt Cheatsheet 2026 — 200+ Ready-to-Use Prompts">
+<meta property="og:description" content="Master AI in minutes with the CRAFT framework. 200+ prompts for business, marketing, coding, content, image generation and more.">
+<meta property="og:url" content="https://manduks.github.io/ai-prompt-cheatsheet/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://manduks.github.io/ai-prompt-cheatsheet/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Prompt Cheatsheet 2026 — 200+ Ready-to-Use Prompts">
+<meta name="twitter:description" content="Master AI in minutes with the CRAFT framework. 200+ prompts for business, marketing, coding, content, image generation and more.">
+<meta name="keywords" content="AI prompt cheatsheet, ChatGPT cheat sheet, prompt engineering cheatsheet 2026, CRAFT framework, AI prompts, ChatGPT prompts, Claude prompts, Gemini prompts, prompt engineering">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #fff; color: #1a1a2e; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: #3B5FFF; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero {
+  padding: 80px 20px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f4ff 0%, #fff 50%, #f0f4ff 100%);
+  border-bottom: 1px solid #e8ecf4;
+}
+.hero-badge {
+  display: inline-block;
+  background: #3B5FFF;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #0d1117;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero h1 span { color: #3B5FFF; }
+.hero .subtitle {
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  color: #555;
+  max-width: 640px;
+  margin: 0 auto 32px;
+  font-weight: 500;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.hero-stats .stat {
+  text-align: center;
+}
+.hero-stats .stat-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #3B5FFF;
+}
+.hero-stats .stat-label {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Container */
+.container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+/* CRAFT Card */
+.craft-section { padding: 60px 20px; }
+.craft-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.craft-section .section-sub {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+.craft-card {
+  background: #fafbff;
+  border: 2px solid #e0e7ff;
+  border-radius: 16px;
+  padding: 36px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.craft-grid {
+  display: grid;
+  gap: 20px;
+}
+.craft-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.craft-letter {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: #3B5FFF;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.craft-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.craft-item p {
+  font-size: 0.92rem;
+  color: #555;
+}
+.craft-example {
+  margin-top: 28px;
+  background: #0d1117;
+  color: #e6edf3;
+  border-radius: 12px;
+  padding: 24px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  position: relative;
+}
+.craft-example .label {
+  color: #3B5FFF;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  display: block;
+}
+.craft-example .line { margin-bottom: 4px; }
+.craft-example .tag { color: #7ee787; font-weight: 600; }
+
+/* Prompts */
+.prompts-section {
+  padding: 60px 20px 40px;
+}
+.prompts-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.prompts-section .section-sub {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+/* Accordion */
+.accordion { max-width: 860px; margin: 0 auto; }
+.accordion-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.accordion-item:hover { box-shadow: 0 2px 12px rgba(59,95,255,0.08); }
+.accordion-header {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  transition: background 0.2s;
+}
+.accordion-header:hover { background: #f8f9ff; }
+.accordion-header .cat-icon {
+  font-size: 1.3rem;
+  margin-right: 12px;
+}
+.accordion-header .left { display: flex; align-items: center; }
+.accordion-header .count {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #999;
+  margin-left: 12px;
+}
+.accordion-arrow {
+  transition: transform 0.3s;
+  color: #999;
+  font-size: 1.2rem;
+}
+.accordion-item.open .accordion-arrow { transform: rotate(180deg); }
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.accordion-item.open .accordion-body { max-height: 3000px; }
+.prompt-list { padding: 0 24px 24px; }
+.prompt-card {
+  background: #f7f8fc;
+  border: 1px solid #eef0f6;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.prompt-card:last-child { margin-bottom: 0; }
+.prompt-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #3B5FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.prompt-text {
+  font-size: 0.92rem;
+  color: #333;
+  line-height: 1.6;
+  padding-right: 60px;
+}
+.copy-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.copy-btn:hover { border-color: #3B5FFF; color: #3B5FFF; }
+.copy-btn.copied { background: #3B5FFF; color: #fff; border-color: #3B5FFF; }
+
+/* CTA */
+.cta-section {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8ecff 100%);
+  text-align: center;
+  margin-top: 40px;
+}
+.cta-section h2 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: #0d1117;
+}
+.cta-section .cta-sub {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.price-card {
+  background: #fff;
+  border: 2px solid #e0e7ff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.price-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(59,95,255,0.12); }
+.price-card.featured { border-color: #3B5FFF; position: relative; }
+.price-card.featured::before {
+  content: 'BEST VALUE';
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3B5FFF;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+.price-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+.price-card .price {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #3B5FFF;
+  margin-bottom: 8px;
+}
+.price-card .price-desc {
+  font-size: 0.88rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+.buy-btn {
+  display: inline-block;
+  background: #3B5FFF;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+  font-family: inherit;
+}
+.buy-btn:hover { background: #2d4de0; text-decoration: none; transform: scale(1.02); }
+.buy-btn:active { transform: scale(0.98); }
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #999;
+  border-top: 1px solid #eee;
+}
+.footer a { color: #3B5FFF; font-weight: 600; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero { padding: 50px 16px 40px; }
+  .hero-stats { gap: 24px; }
+  .craft-card { padding: 20px; }
+  .craft-item { gap: 12px; }
+  .accordion-header { padding: 16px 18px; font-size: 0.95rem; }
+  .prompt-list { padding: 0 18px 18px; }
+  .prompt-text { padding-right: 50px; font-size: 0.87rem; }
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">Free Cheatsheet &mdash; 2026 Edition</div>
+  <h1>The Ultimate <span>AI Prompt Cheat Sheet</span> &mdash; 200+ Prompts</h1>
+  <p class="subtitle">The CRAFT Framework: Context, Role, Action, Format, Tone. Master AI in minutes.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Ready-to-Use Prompts</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Categories</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">Framework to Rule Them All</div></div>
+  </div>
+</section>
+
+<!-- CRAFT Framework -->
+<section class="craft-section">
+  <div class="container">
+    <h2>The CRAFT Framework</h2>
+    <p class="section-sub">Write prompts that actually work. Every single time.</p>
+    <div class="craft-card">
+      <div class="craft-grid">
+        <div class="craft-item">
+          <div class="craft-letter">C</div>
+          <div><h3>Context</h3><p>Give background info. What's the situation? Who's the audience? What do you already have?</p></div>
+        </div>
+        <div class="craft-item">
+          <div class="craft-letter">R</div>
+          <div><h3>Role</h3><p>Tell the AI who to be. "You are a senior product manager at a SaaS startup" beats "help me."</p></div>
+        </div>
+        <div class="craft-item">
+          <div class="craft-letter">A</div>
+          <div><h3>Action</h3><p>State exactly what you need done. Be specific: "Write 5 subject lines" not "help with email."</p></div>
+        </div>
+        <div class="craft-item">
+          <div class="craft-letter">F</div>
+          <div><h3>Format</h3><p>Define the output structure. Bullet points? Table? JSON? Numbered list? 280 characters?</p></div>
+        </div>
+        <div class="craft-item">
+          <div class="craft-letter">T</div>
+          <div><h3>Tone</h3><p>Set the voice. Professional, casual, witty, academic, empathetic. Match your audience.</p></div>
+        </div>
+      </div>
+      <div class="craft-example">
+        <span class="label">Example using CRAFT</span>
+        <div class="line"><span class="tag">[Context]</span> I run a DTC skincare brand targeting women 25-40. We're launching a vitamin C serum at $38.</div>
+        <div class="line"><span class="tag">[Role]</span> You are a conversion copywriter who has written for Glossier and The Ordinary.</div>
+        <div class="line"><span class="tag">[Action]</span> Write 5 email subject lines for the launch announcement that drive opens.</div>
+        <div class="line"><span class="tag">[Format]</span> Numbered list. Each under 50 characters. Include one emoji option.</div>
+        <div class="line"><span class="tag">[Tone]</span> Confident, clean, slightly playful. Never salesy or desperate.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Prompts -->
+<section class="prompts-section">
+  <div class="container">
+    <h2>35 Free Prompts to Get You Started</h2>
+    <p class="section-sub">Click any prompt to copy. These are samples from the full 200+ collection.</p>
+    <div class="accordion">
+
+      <!-- 1. Business Strategy -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#9878;</span> Business Strategy <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">Competitive Moat Analysis</div>
+              <div class="prompt-text">You are a strategy consultant from Bain & Company. I run [describe your business, revenue, and market]. Analyze my competitive position using Porter's Five Forces. For each force, rate the threat level (Low/Medium/High), explain why, and give one specific action I can take this quarter to strengthen my moat. Format as a table with columns: Force | Threat Level | Analysis | Recommended Action.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Pricing Strategy Optimizer</div>
+              <div class="prompt-text">You are a pricing strategist who has worked with SaaS and DTC brands. My product is [describe product, current price, target customer]. My top 3 competitors charge [list prices]. Analyze whether I should use penetration pricing, value-based pricing, or premium pricing. Give me a specific recommended price point with reasoning, and design a 3-tier pricing structure (Good/Better/Best) with feature breakdowns for each tier.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">90-Day Go-to-Market Plan</div>
+              <div class="prompt-text">You are a VP of Growth at a high-growth startup. I'm launching [product] targeting [audience] in [market]. My budget is [amount] and I have [team size]. Build me a 90-day go-to-market plan broken into three 30-day phases. For each phase, include: primary objective, 3 key activities, success metrics, budget allocation, and the biggest risk with its mitigation. Format as a structured timeline.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Unit Economics Deep Dive</div>
+              <div class="prompt-text">You are a CFO advising an early-stage company. Here are my numbers: [monthly revenue, customer count, avg order value, CAC, churn rate, gross margin]. Calculate my LTV, LTV:CAC ratio, payback period, and monthly burn rate. Then tell me bluntly: is this business viable? What are the 2 most critical levers I need to improve, and what specific targets should I aim for in the next 6 months? Show all math.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Partnership Pitch Builder</div>
+              <div class="prompt-text">You are a business development director who has closed $10M+ in partnership deals. I want to pitch a partnership between my company [describe your company] and [target partner company]. Research what would make this mutually beneficial. Write a cold outreach email to their Head of Partnerships that: opens with a specific insight about their business, proposes a clear value exchange, includes one concrete pilot idea, and ends with a low-friction CTA. Keep it under 200 words.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Marketing & Sales -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#128640;</span> Marketing &amp; Sales <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">Landing Page Copy</div>
+              <div class="prompt-text">You are a direct-response copywriter trained by David Ogilvy. I'm building a landing page for [product/service] targeting [audience]. The main pain point is [pain point] and the key benefit is [benefit]. Write the complete landing page copy: headline (under 10 words, benefit-driven), subheadline, 3 benefit blocks with icons suggestions, social proof section framework, objection-handling FAQ (5 questions), and a CTA button text with surrounding urgency copy. Use PAS (Problem-Agitation-Solution) throughout.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Cold Email Sequence</div>
+              <div class="prompt-text">You are a B2B sales expert with a 40% open rate track record. I sell [product/service] to [target role] at [company type]. My unique value prop is [UVP]. Write a 3-email cold outreach sequence. Email 1: Pattern-interrupt opener + curiosity hook (under 80 words). Email 2: Case study angle with specific numbers (under 60 words). Email 3: Breakup email with a surprising reframe (under 50 words). For each, include a subject line under 40 characters. No spam trigger words.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Ad Copy Generator (Meta/Google)</div>
+              <div class="prompt-text">You are a performance marketing specialist managing $500K/month in ad spend. I need ad copy for [product] targeting [audience] on [platform: Meta/Google/TikTok]. My angle is [main angle/hook]. Write 5 variations: 1) Question-based hook, 2) Bold claim with proof, 3) Before/after transformation, 4) Social proof lead, 5) Contrarian take. For each, include primary text, headline (under 40 chars), and description. Flag any policy compliance risks.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Sales Objection Handler</div>
+              <div class="prompt-text">You are a senior sales trainer at Sandler. I sell [product] at [price point] to [buyer persona]. The top 5 objections I hear are: 1) Too expensive, 2) Need to think about it, 3) Already using [competitor], 4) Not the right time, 5) Need to check with my team. For each objection, give me: the real fear behind it, a response script using the "feel-felt-found" technique, a follow-up question that re-qualifies the prospect, and a micro-commitment to ask for.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Social Proof & Testimonial Extractor</div>
+              <div class="prompt-text">You are a customer research specialist. I have these raw customer messages/reviews: [paste 5-10 raw testimonials or support messages]. Extract and rewrite them into 5 polished testimonials optimized for my landing page. Each should: highlight a specific result or transformation, be 2-3 sentences max, sound natural (not corporate), include a suggested attribution format. Also identify the 3 strongest "power phrases" I should use in my marketing headlines.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Content Writing -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#9997;</span> Content Writing <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">SEO Blog Post Outline</div>
+              <div class="prompt-text">You are an SEO content strategist ranking pages on the first page of Google. I want to write a blog post targeting the keyword "[your keyword]" with a monthly search volume of [volume]. Analyze the search intent behind this keyword. Then create a detailed outline with: a click-worthy title (include the keyword naturally), meta description (under 155 chars), H2 and H3 structure with target word counts per section, 3 internal link opportunities, 2 external authority link suggestions, a featured snippet target (paragraph or list), and a "People Also Ask" section with 4 questions to answer. Total target: [word count] words.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">LinkedIn Post (Viral Format)</div>
+              <div class="prompt-text">You are a LinkedIn ghostwriter for Fortune 500 executives. Write a LinkedIn post about [topic/lesson] using the hook-story-insight format. Requirements: First line must be a pattern-interrupt hook that stops the scroll (no "I'm excited to announce"). Include a personal or relatable story in 3-4 short paragraphs. End with a non-obvious takeaway. Use line breaks after every 1-2 sentences. Add a conversation-starting question at the end. Total length: 150-200 words. Do NOT use hashtags or emojis in the body. Tone: thoughtful and human, not performative.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Newsletter Issue Writer</div>
+              <div class="prompt-text">You are the editor of a popular industry newsletter with 50K subscribers. I need to write this week's issue about [topic]. My audience is [describe audience]. Structure it as: 1) One-liner TLDR at the top, 2) The big story (200 words, opinionated take, not a summary), 3) "What this means for you" (3 actionable bullet points), 4) Quick hits section (4 interesting links with one-sentence commentary each), 5) One thought-provoking closing question. Voice: smart friend who works in the industry, not a journalist. Keep total length under 600 words.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Twitter/X Thread Builder</div>
+              <div class="prompt-text">You are a Twitter ghostwriter whose threads routinely get 1M+ impressions. Write a 10-tweet thread about [topic]. Rules: Tweet 1 must be a bold, specific claim that creates curiosity (no "Thread:" or "A thread on"). Each tweet must stand alone as a valuable insight. Use concrete numbers, examples, or frameworks &mdash; no vague platitudes. Tweet 5 should be the most screenshot-worthy (a framework, list, or hot take). Final tweet: CTA to follow + retweet with a reason why. Each tweet under 260 characters. No emojis except in the final CTA.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Product Description (E-commerce)</div>
+              <div class="prompt-text">You are a senior copywriter at a top DTC brand. Write a product description for [product name] that sells for [price]. Key features: [list 3-5 features]. Target customer: [describe]. Write: 1) A punchy headline (under 8 words), 2) An opening hook that leads with the transformation, not the feature (2 sentences), 3) 4 benefit-driven bullet points (feature &rarr; benefit &rarr; feeling format), 4) A "Who it's for" one-liner, 5) A micro-urgency CTA. Total under 150 words. Tone: premium but approachable, like Allbirds or Aesop.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Coding & Dev -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#128187;</span> Coding &amp; Dev <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">Code Review & Refactor</div>
+              <div class="prompt-text">You are a principal software engineer at Google who specializes in clean architecture. Review this code: [paste code]. Analyze it for: 1) Bugs or potential runtime errors, 2) Performance issues (time/space complexity), 3) Security vulnerabilities, 4) Readability and naming conventions, 5) SOLID principle violations. For each issue found, rate its severity (Critical/Warning/Suggestion), explain the problem, and provide the refactored code. At the end, give an overall code quality score out of 10 with your top 3 priorities to fix.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">API Design Architect</div>
+              <div class="prompt-text">You are a backend architect who has designed APIs at Stripe and Twilio. I need a REST API for [describe feature/system]. Users should be able to [list 3-5 user actions]. Design the complete API: list all endpoints (method, path, description), request/response schemas in JSON, authentication approach, pagination strategy, error response format with codes, and rate limiting recommendations. Follow REST best practices and explain any design trade-offs. Include example curl commands for the 3 most common operations.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Debug & Fix Error</div>
+              <div class="prompt-text">You are a senior debugging specialist. I'm getting this error: [paste error message and stack trace]. Here's the relevant code: [paste code]. My environment: [language version, framework, OS]. Don't just explain the error &mdash; give me: 1) Root cause in one sentence, 2) The exact fix with corrected code, 3) Why this fix works, 4) How to prevent this class of error in the future (e.g., a linting rule, type annotation, or test), 5) Any other potential issues you spotted in the surrounding code.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Database Schema Designer</div>
+              <div class="prompt-text">You are a database architect specializing in PostgreSQL. I'm building [describe app/feature]. The key entities are: [list entities and their relationships]. Design the database schema with: CREATE TABLE statements including proper data types, constraints, and indexes. Define all relationships (1:1, 1:N, M:N with junction tables). Add created_at/updated_at timestamps. Include 3 common query patterns this schema supports, written as SQL with EXPLAIN analysis of their performance. Flag any potential N+1 query risks and suggest denormalization trade-offs if applicable.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Test Suite Generator</div>
+              <div class="prompt-text">You are a QA engineer obsessed with test coverage. Here is my function/module: [paste code]. Write a comprehensive test suite using [Jest/pytest/your framework]. Include: 1) Happy path tests for all expected behaviors, 2) Edge cases (empty inputs, nulls, boundary values, max limits), 3) Error cases that should throw/return errors, 4) At least one integration-style test if the code has external dependencies (mock them). Use descriptive test names in "should [expected behavior] when [condition]" format. Aim for 90%+ branch coverage. Add a comment above any test explaining why that case matters.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Image Generation -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#127912;</span> Image Generation <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">Product Photography (Midjourney)</div>
+              <div class="prompt-text">A premium flat-lay product shot of [your product] on a [marble/concrete/wood] surface, soft diffused natural lighting from the left, shallow depth of field, minimalist styling with [2-3 prop items], color palette: [specify colors], shot on Hasselblad H6D-100c, 80mm lens, commercial product photography, 4K, ultra-detailed --ar 4:5 --style raw --s 250 --v 6.1</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Social Media Graphic (DALL-E)</div>
+              <div class="prompt-text">Design a bold, modern social media graphic for Instagram. The theme is "[your topic/headline]". Style: clean flat illustration with a limited palette of [2-3 colors] and white. Include abstract geometric shapes as accent elements. The composition should have clear visual hierarchy with space for text overlay. No photorealism. Inspired by the design aesthetics of Linear and Stripe. Aspect ratio 1:1, high contrast, no text in the image.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Brand Mascot/Character (Midjourney)</div>
+              <div class="prompt-text">A friendly [animal/creature type] mascot character for a [industry] brand, 3D Pixar-style rendering, [brand color] as primary color, simple and memorable design, expressive face with [emotion], holding a [relevant prop], clean white background, mascot logo design, character sheet showing front and 3/4 view, suitable for use at small sizes (favicon), Disney-quality character design --ar 1:1 --style raw --s 200 --v 6.1</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Blog Header / Hero Image (Midjourney)</div>
+              <div class="prompt-text">A wide cinematic hero image representing the concept of "[abstract concept, e.g., digital transformation]", editorial style, muted tones with one accent color [specify], atmospheric depth, abstract and metaphorical (not literal), negative space on the right side for text overlay, grain texture, inspired by the visual style of Wired magazine covers, ultrawide composition --ar 21:9 --style raw --s 300 --v 6.1</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Presentation Slide Background (DALL-E)</div>
+              <div class="prompt-text">Create a subtle, professional presentation slide background. Style: very minimal abstract gradient mesh blending from [color 1] to [color 2], with soft organic shapes and light noise texture. The design must be low-contrast enough that black or white text remains perfectly readable on top. No focal point, no objects, no patterns that compete with content. Landscape orientation 16:9. Think: Apple keynote background aesthetic. Ultra clean and modern.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Career & Resume -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#128188;</span> Career &amp; Resume <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">Resume Bullet Point Rewriter</div>
+              <div class="prompt-text">You are a professional resume writer who has placed candidates at FAANG companies. Here are my raw job responsibilities from my role as [title] at [company]: [paste raw bullet points]. Rewrite each bullet using the XYZ formula: "Accomplished [X] as measured by [Y], by doing [Z]." Make each one quantified (add realistic metrics if I didn't provide them &mdash; flag those with [estimated]). Use strong action verbs (never "responsible for" or "helped with"). Target each bullet at 1-2 lines. Prioritize impact and scope over task description.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Interview Answer Builder (STAR Method)</div>
+              <div class="prompt-text">You are an executive interview coach. I'm interviewing for [role] at [company]. The question is: "[paste behavioral interview question]." My rough experience: [paste a few sentences about what you did]. Structure my answer using the STAR method (Situation, Task, Action, Result). Make the Situation concise (2 sentences), the Action section the longest and most detailed (show leadership and decision-making), and the Result quantified with a business outcome. Keep total answer under 90 seconds when spoken aloud. End with a forward-looking statement connecting this experience to the role.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Cover Letter That Gets Read</div>
+              <div class="prompt-text">You are a hiring manager who has read 10,000 cover letters. Write one that you would actually remember. I'm applying for [role] at [company]. My relevant background: [2-3 key experiences]. What excites me about this company: [reason]. Write a 3-paragraph cover letter: Para 1: Open with a specific insight about the company's recent work (not generic flattery) and connect it to your skill. Para 2: One concrete achievement story with a result, tailored to their biggest need. Para 3: Forward-looking value add + enthusiastic close. Total under 250 words. No cliches ("passionate team player" etc.).</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Salary Negotiation Script</div>
+              <div class="prompt-text">You are a career negotiation coach who has helped candidates increase offers by 20-40%. I received an offer for [role] at [company]: [base salary], [equity/bonus], [other details]. Market rate for this role in [location] is [range]. I want to negotiate to [target]. Write me: 1) An opening statement for the negotiation call (grateful but anchoring high), 2) Responses to 3 common pushbacks ("that's the top of our band", "we can revisit in 6 months", "the equity makes up for it"), 3) Alternative asks if base is truly fixed (signing bonus, extra PTO, remote flexibility, accelerated review), 4) A closing line that creates urgency without ultimatums.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">LinkedIn Profile Optimizer</div>
+              <div class="prompt-text">You are a LinkedIn top-voice personal brand strategist. Here's my current LinkedIn headline and about section: [paste current]. My target audience is [who I want to attract: recruiters/clients/partners]. My key strengths: [list 3-4]. Rewrite my: 1) Headline using the format "[Role] | I help [audience] achieve [outcome] | [credibility marker]" (under 120 chars), 2) About section in first person, opening with a hook (not "I am a..."), weaving in 3 keywords for search, including a clear CTA at the end, under 200 words, 3) Three featured section ideas that showcase authority. Make it human, not corporate.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Education -->
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          <span class="left"><span class="cat-icon">&#127891;</span> Education <span class="count">5 prompts</span></span>
+          <span class="accordion-arrow">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="prompt-list">
+            <div class="prompt-card">
+              <div class="prompt-label">Feynman Technique Explainer</div>
+              <div class="prompt-text">You are a world-class teacher who can explain anything to anyone. I want to deeply understand [complex topic]. Explain it to me using the Feynman Technique: 1) Explain it like I'm a smart 12-year-old (no jargon, use analogies from everyday life), 2) Identify the 3 concepts where most people get confused and clarify each one, 3) Create a simple mental model or visual metaphor I can use to remember the core idea, 4) Give me 3 "test yourself" questions that prove whether I truly understand it or am just memorizing. If I can't answer those questions, explain what I'm missing.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Personalized Study Plan Builder</div>
+              <div class="prompt-text">You are an expert learning coach specializing in accelerated learning. I want to learn [skill/subject] from [current level: beginner/intermediate] to [target level] in [timeframe]. I can dedicate [hours per week]. My learning style preference: [visual/reading/hands-on/video]. Build me a week-by-week study plan that includes: specific resources (free when possible, with URLs), daily practice exercises, weekly milestone assessments, and spaced repetition checkpoints. Use the 80/20 principle &mdash; identify the 20% of concepts that will give me 80% of practical ability. Include a "you'll know you're ready when..." benchmark for completion.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Socratic Tutor</div>
+              <div class="prompt-text">You are a Socratic tutor. Your job is to help me learn [subject/topic] by asking me questions, never by giving me answers directly. Start with a foundational question to gauge my current understanding. Based on my answer: if I'm right, go deeper and ask a harder question. If I'm wrong, don't correct me &mdash; instead, ask a simpler question that guides me to discover my mistake myself. After every 3 exchanges, give me a brief "checkpoint" summary of what I've demonstrated I understand. Adapt your difficulty in real-time. Begin now.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Flashcard Set Generator</div>
+              <div class="prompt-text">You are a spaced-repetition and memory science expert. I need to memorize key concepts from [subject/chapter/topic]. Here are my notes: [paste notes or describe what you need to learn]. Create 20 optimized flashcards. Rules: front side should be a specific question (not "define X" but "What happens when X meets Y?"), back side should be concise (under 30 words), include 3 "reversible" cards (can be quizzed in either direction), add 2 "application" cards that test real-world use, not just recall. Tag each card with difficulty: Basic/Intermediate/Advanced. Format as a numbered table: # | Front | Back | Difficulty.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+            <div class="prompt-card">
+              <div class="prompt-label">Research Paper Summarizer</div>
+              <div class="prompt-text">You are a research scientist who translates academic papers for practitioners. Here is a paper (or abstract): [paste]. Give me: 1) One-sentence TLDR a busy executive could understand, 2) The core research question and why it matters for [my field/interest], 3) Methodology in plain English (what they actually did), 4) Key findings as 3-4 bullet points with the specific numbers/results, 5) Limitations the authors acknowledged (and one they didn't), 6) "So what?" &mdash; how I can practically apply this finding to [my work/project], 7) 2 related papers I should read next and why.</div>
+              <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="get-full-pack">
+  <h2>Want All 200+ Prompts? Get the Full Pack.</h2>
+  <p class="cta-sub">Stop writing mediocre prompts. These are battle-tested, copy-paste ready, and organized by use case.</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>AI Prompt Mega Pack</h3>
+      <div class="price">$29</div>
+      <div class="price-desc">200+ prompts across all categories. CRAFT framework included. Lifetime updates.</div>
+      <a href="https://buy.stripe.com/4gM7wab1Dg2sfrWbIZ" class="buy-btn">Get the Mega Pack</a>
+    </div>
+    <div class="price-card featured">
+      <h3>All Kits Bundle</h3>
+      <div class="price">$97</div>
+      <div class="price-desc">15 kits, 2000+ prompts. Business, marketing, coding, image gen, and more. The complete library.</div>
+      <a href="https://buy.stripe.com/3cs03Ig9FfYUbzG4gx" class="buy-btn">Get All 15 Kits</a>
+    </div>
+    <div class="price-card">
+      <h3>Content Creator Kit</h3>
+      <div class="price">$39</div>
+      <div class="price-desc">300+ prompts for blogs, social, newsletters, video scripts, and SEO content.</div>
+      <a href="https://buy.stripe.com/14k8AecZFfYU5ba3co" class="buy-btn">Get the Creator Kit</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Built by <a href="https://midastools.co" target="_blank" rel="noopener">MidasTools.co</a> &mdash; AI tools and prompt kits for makers, marketers, and developers.</p>
+  <p style="margin-top:8px;">Source on <a href="https://github.com/manduks/ai-prompt-cheatsheet" target="_blank" rel="noopener">GitHub</a> &bull; More kits at <a href="https://midastools.co" target="_blank" rel="noopener">midastools.co</a></p>
+</footer>
+
+<script>
+function toggleAccordion(btn) {
+  const item = btn.parentElement;
+  const wasOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('open'));
+  // Toggle current
+  if (!wasOpen) item.classList.add('open');
+}
+
+function copyPrompt(btn) {
+  const text = btn.parentElement.querySelector('.prompt-text').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 1500);
+  });
+}
+
+// Open first accordion by default
+document.querySelector('.accordion-item').classList.add('open');
+</script>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI Prompt Cheatsheet 2026 — 200+ ChatGPT Prompts",
+  "description": "The ultimate AI prompt cheat sheet. 200+ ready-to-use prompts for ChatGPT, Claude, Gemini using the CRAFT framework.",
+  "url": "https://manduks.github.io/ai-prompt-cheatsheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "MidasTools",
+    "url": "https://midastools.co"
+  },
+  "dateModified": "2026-03-30"
+}
+</script>
+</body>
+</html>
